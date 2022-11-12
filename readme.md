@@ -24,3 +24,9 @@ def test_NAME():
 
 1. Add your regular expression to the `expressions` folder
 2. Add a test with a couple of matching, and non-matching cases
+
+## Sources
+
+- Custom expressions
+- Contributions from internal projects
+- https://projects.lukehaas.me/regexhub/
