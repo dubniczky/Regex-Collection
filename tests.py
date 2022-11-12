@@ -107,3 +107,10 @@ def test_time():
         ['12:33:20', '00:00:00', '23:59:59' ],
         ['12:33:20.000', '12:33:20Z', '12:33:20+00:00']
     )
+    
+def test_url():
+    simulate(
+        regname(),
+        ['https://example.com', 'file://images.com/whale.jpg', 'http://asd.com/a/b.c' ],
+        ['http', '', 'http://.com', ]
+    )
