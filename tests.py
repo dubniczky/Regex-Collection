@@ -37,3 +37,10 @@ def test_integer():
         ['0', '7', '-18449'],
         ['a', '', '1.1']
     )
+    
+def test_base64():
+    simulate(
+        regname(),
+        ['0', 'abc/99=', 'Zm9vYmFyfg=='],
+        ['a===', '', '#']
+    )
