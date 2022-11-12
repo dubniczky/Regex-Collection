@@ -73,3 +73,10 @@ def test_sha256():
         ['gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg', 'a7']
     )
     
+def test_md5():
+    simulate(
+        regname(),
+        ['72b302bf297a228a75730123efef7c41' ],
+        ['gggggggggggggggggggggggggggggggg', 'aa']
+    )
+    
