@@ -15,7 +15,6 @@ Testing is done with Python built-in regular expression library `re`. The testin
 ```python
 def test_NAME():
     simulate(
-        regname(),
         [ 'MATCH_1', 'MATCH_2', '...' ],
         [ 'NOMATCH_1', 'NOMATCH_2', '...' ],
     )
