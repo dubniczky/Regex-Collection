@@ -44,3 +44,10 @@ def test_base64():
         ['0', 'abc/99=', 'Zm9vYmFyfg=='],
         ['a===', '', '#']
     )
+    
+def test_hex():
+    simulate(
+        regname(),
+        ['0', '7', 'a', 'f', 'A', 'fF', '1234567890abcdefABCDEF'],
+        ['g', '', '#']
+    )
