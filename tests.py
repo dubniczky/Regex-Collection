@@ -58,3 +58,10 @@ def test_uuid4():
         ['29506BA9-4854-4AF9-A311-498EBE583F1E', '6077BFD5-4A5E-4B8D-A6F3-3EAA5A7BA6CF', ],
         ['-', '', 'X9506BA9-4854-4AF9-A311-498EBE583F1E']
     )
+    
+def test_email():
+    simulate(
+        regname(),
+        ['a@b.c', 'richard+spam@google.com', 'rick@asd.example.com' ],
+        ['a @b.c', '', 'a@@b.c', '#a@b.c']
+    )
