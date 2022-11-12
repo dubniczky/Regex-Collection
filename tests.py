@@ -27,6 +27,13 @@ def regname():
 def test_float():
     simulate(
         regname(),
-        ['1.0', '7', '0.0012952137'],
+        ['1.0', '7', '-0.0012952137'],
         ['a', '', '1.1.1']
+    )
+
+def test_integer():
+    simulate(
+        regname(),
+        ['0', '7', '-18449'],
+        ['a', '', '1.1']
     )
