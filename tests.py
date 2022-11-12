@@ -79,4 +79,11 @@ def test_md5():
         ['72b302bf297a228a75730123efef7c41' ],
         ['gggggggggggggggggggggggggggggggg', 'aa']
     )
+
+def test_ipv4():
+    simulate(
+        regname(),
+        ['1.1.1.1', '192.168.1.1', '255.255.255.255'],
+        ['0.0.0', '10.10.10.10.10', '3000.1.1.1']
+    )
     
