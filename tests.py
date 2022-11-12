@@ -1,7 +1,7 @@
 import re
 import inspect
 
-BASE_FOLDER = './'
+BASE_FOLDER = 'expressions/'
 
 # Load regex file based on name
 def get(reg):
