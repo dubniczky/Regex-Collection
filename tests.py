@@ -114,3 +114,10 @@ def test_url():
         ['https://example.com', 'file://images.com/whale.jpg', 'http://asd.com/a/b.c' ],
         ['http', '', 'http://.com', ]
     )
+    
+def test_color():
+    simulate(
+        regname(),
+        ['#000000', '#ffffff', '#123456', '#a1f', '#ABCDEF' ],
+        ['!123456', '', '#1234567', '#12345', '#1a']
+    )
