@@ -65,3 +65,11 @@ def test_email():
         ['a@b.c', 'richard+spam@google.com', 'rick@asd.example.com' ],
         ['a @b.c', '', 'a@@b.c', '#a@b.c']
     )
+    
+def test_sha256():
+    simulate(
+        regname(),
+        ['91c9c3ff310a53f8d179461d9af55371c78b67c38ab030bf9c026693ca495399' ],
+        ['gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg', 'a7']
+    )
+    
